@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="National University Registration Card Search">
+  <meta property="og:description" content="National University — Political Science (2023–2024). Search Regular and Private Registration Cards.">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Registration Card Search">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="National University Registration Card Search">
+  <meta name="twitter:description" content="Search National University Registration Cards — Regular and Private Course.">
+  <meta name="twitter:image" content="preview.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="canonical" href="">
+  <meta name="theme-color" content="#0f172a">
+  <title>Registration Card Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div class="hero-top">
+      <div class="hero-copy">
+        <div class="badge">NATIONAL UNIVERSITY · MASTER'S DEGREE (FINAL)</div>
+        <h1>Registration Card Search</h1>
+        <p class="intro">Political Science - 19 বিভাগের <strong>2023–2024</strong> শিক্ষাবর্ষের Registration Card Search System। Regular ও Private Course-এর কার্ড আলাদা Search, Preview, PDF, JPG, PNG এবং Share করুন।</p>
+        <div class="course-info">
+          <span>🏛️ Department: Political Science - 19</span>
+          <span>📅 Year/Session: 2023–2024</span>
+          <span>🎓 Course: Master's Degree (Final)</span>
+          <span>🏫 College: Government Murari Chand College</span>
+        </div>
+        <div class="creator-row">
+          <span class="design-by">Design by <strong>Mahmudul Hasan</strong></span>
+          <a class="facebook" href="https://facebook.com/mahmud.id.5" target="_blank" rel="noopener" aria-label="Mahmudul Hasan Facebook profile">📘 Facebook: facebook.com/mahmud.id.5</a>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="mahmudul-hasan.jpg" alt="Mahmudul Hasan">
+        <div class="profile-name">Mahmudul Hasan</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="search-card course-card">
+    <div class="course-title"><span>REGULAR COURSE</span><small>Regular data/PDF আলাদা</small></div>
+    <label for="regularSearch">নাম / Class Roll / Admission Roll / Registration No.</label>
+    <div class="search-row">
+      <input id="regularSearch" type="search" autocomplete="off" spellcheck="false" placeholder="যেমন: Mahmudul Hasan / 197 / 3006762 / 23319025221">
+      <button id="regularSearchBtn" class="search-btn" type="button">🔍 সার্চ</button>
+      <button id="regularClear" class="secondary" type="button">Clear</button>
+    </div>
+    <div class="hint">নামের অংশ, Class Roll, Admission Roll বা Registration No. দিয়ে Regular Course খুঁজুন।</div>
+    <div id="regularStatus" class="status" aria-live="polite"></div>
+    <div id="regularResults" class="results" aria-live="polite"></div>
+  </section>
+
+  <section class="search-card course-card private-card">
+    <div class="course-title"><span>PRIVATE COURSE</span><small>665 Registration Cards</small></div>
+    <label for="privateSearch">Student Name / Registration No. / Father Name / Sl No.</label>
+    <div class="search-row">
+      <input id="privateSearch" type="search" autocomplete="off" spellcheck="false" placeholder="যেমন: JAMIL AHMED MUNNA / 23319803535 / SULEMAN ALI PIR / 6009758">
+      <button id="privateSearchBtn" class="search-btn" type="button">🔍 সার্চ</button>
+      <button id="privateClear" class="secondary" type="button">Clear</button>
+    </div>
+    <div class="hint">Private Course-এর 665-page PDF-এর প্রতিটি page একটি Registration Card। Search শুধু Private data/PDF ব্যবহার করবে।</div>
+    <div id="privateStatus" class="status" aria-live="polite"></div>
+    <div id="privateResults" class="results" aria-live="polite"></div>
+  </section>
+
+  <footer>
+    <span>Regular Course · Existing data/PDF preserved</span>
+    <span>Private Course · 665 Registration Cards · GitHub Pages compatible</span>
+  </footer>
+</main>
+
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-card">
+    <button id="closeModal" class="modal-close" type="button">✕</button>
+    <h2 id="modalTitle"></h2>
+    <div id="modalInfo" class="modal-info"></div>
+    <div id="zoomPreview" class="zoom-preview"><div class="preview-loading">বড় Preview হচ্ছে…</div></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
