@@ -1,0 +1,9 @@
+{
+  "totalCards": 376,
+  "studentListCount": 336,
+  "matchedToStudentList": 336,
+  "outsideStudentList": 40,
+  "source": "Combined Registration Cards + Student Data PDF",
+  "mappingKey": "Admission Roll from Student Data = Sl No on Registration Card",
+  "generatedFromPages": 376
+}
